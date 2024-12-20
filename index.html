@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signUp Challange</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form>
+          <label for="email">Enter your email</label><br />
+          <div class="form-input">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              oninput="validateEmail()"
+            />
+          </div>
+          <div id="emailMessage" class="error"></div>
+          <label for="password">Enter your password</label><br />
+          <div class="form-input">
+            <input
+              type="password"
+              placeholder="Set your password"
+              id="password"
+              oninput="validatePassword()"
+            />
+          </div>
+          <div id="passwordMessage" class="error"></div>
+          <button type="submit" id="submitBtn" disabled>Submit</button>
+          <div id="finalMessage" class="success" style="display: none"></div>
+        </form>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
